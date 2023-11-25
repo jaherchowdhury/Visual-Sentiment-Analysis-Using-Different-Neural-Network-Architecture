@@ -6,27 +6,61 @@ This repository provides the source code and raw datasets of the project "Visual
 
 # Architecture
 The Evaluation will be done on three different stages:
+![Dataset Pre-Processing (2)](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/b045aea4-839b-405b-b8ff-04d675f1a3ff)
+![Dataset Pre-Processing (1)](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/e37150e7-c0e4-4b25-96b5-69092e98e1c0)
+![Dataset Pre-Processing](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/a4210c9d-6424-46be-9f34-fe56ca1af572)
 
-Stage 01: Model Evaluation of Tranfer Learned/Base Models:
-
-![Dataset Pre-Processing (2)](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/daeb0b57-501f-4e17-bea3-98e41c4ab32d)
-
-Stage 02: Comparative Analysis of Base Model vs Transfer Learned Models:
-![Dataset Pre-Processing (1)](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/47ad62cf-9123-48af-b0a6-e2c2b5d5449d)
-
-
-Stage 03: Comparative Analysis of Transfer Learned Model-01 vs Transfer Learned Model-02:
-
-![Dataset Pre-Processing](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/cfaf9ad5-b785-4b2c-95df-5edab21f72b1)
 
 # Data
 
-The Karolinska Directed Emotional Faces (KDEF) is a set of totally 4900 pictures of human facial expressions.The Averaged KDEF (AKDEF) is a set of averaged pictures created from the original KDEF images.
+The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centred and occupies about the same amount of space in each image.
 
-The KDEF and AKDEF materials were produced in 1998 and have since then been freely shared within the research community. By today, KDEF has been used in more than 1500 research publications.
+The task is to categorize each face based on the emotion shown in the facial expression into one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The training set consists of 28,709 examples and the public test set consists of 3,589 examples. The dataset can be found in Kaggle Dataset Repository(https://www.kaggle.com/datasets/msambare/fer2013/data).Some sample data are given in this reporsitory for running the code smoothly.
 
-This Dataset contains seven emotion classes named as: anger,fear, happy, neutral, disgust, sad, surprise. each emotion classes have 420 images of man and women. This dataset is the subset of the orginal KDEF dataset.
+# Library Dependencies
+1. Numpy
+2. Pandas
+3. OS
+4. Keras
+5. OpenCV
+6. Seaborn
+7. Matplotlib
+8. Joblib
+   
+# Models
+In our experminets we used three models(VGG19,ResNet50,DenseNet121). All the models are availble in the tf.keras.applications.
+# Layers
+Through our project I used different layers like:
+* Flatten
+* BatchNormalization
+* GlobalPooling2D
+* Dropout
+* Dense
+These layers can be used from tensorflow.keras.layers.
+
+# HyperParameters and Optimizer
+We have used Adamm Optimizer for our base models like VGG19 or ResNet50. For the transfer learning we have used the SGD(Stochastic Gradient Descent) optimizer.
+There are lots of Hyperparameter involved in our models. The list of the hyper-parameter and their values are given in the below table:
+
+| Parameters  | Values |
+| ------------- | ------------- |
+| learning_rate(adam)   | 0.0001  |
+| learning_rate(sgd)   | 0.0001 |
+| momentum  | 0.9  |
+| dropout_rate  | 0.5  |
+| l2_penalty  | 0.01 |
 
 # Training
+For Training the dataset we have splitted the dataset into we have took the images of train folder. We preprocessed the data using data augmentation and histogram equalization.
 
-For 
+| Variables  | Meaning | Values |
+| ------------- | ------------- | ------------- |
+| input_size   | Input size of the Image  | (48,48) |
+| batch_size   | Sample of Image Processed by the model at each iteration  | 64 |
+| rotation_range  | Rotates  the image to specific number of degrees  | 20 |
+| width_shift_range,height_shift_range  | Allows shifting the image horizontally by a maximum of 20% of the image width  | .2 |
+| rescale  | Normalizes pixel values to the range [0, 1]   | 1./255 |
+| num_classes  | Number of emotion catagories  | 7 |
+
+
+
