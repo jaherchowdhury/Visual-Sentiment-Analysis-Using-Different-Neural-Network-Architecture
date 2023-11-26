@@ -74,8 +74,8 @@ The testing results are given in the output folder.
 The models are tuned with the hyper-meter. There were several of hyper-meters for this models like, learning-rate, dropout, l2_regularization, etc. We took a group of parameter to test that which set of parameter is giving us the best results.
 # System Specification
 * Windows 10 Education 64-bit
-*Ram: 32 GB
-*CPU: Intel Core i7-9700k 3.60 GHz 
+* Ram: 32 GB
+* CPU: Intel Core i7-9700k 3.60 GHz 
 # Comparison
 We evaluated the model by the test and train accuracy. Also, a classification report was done to show the accuracy,f1-score,precision and recall.
 Moreover, freezing and unfreezing the layers impacts on the accuracy of the models. That's why I took several group of layers settings and then applied with the hyper-tuned models to find the results.
