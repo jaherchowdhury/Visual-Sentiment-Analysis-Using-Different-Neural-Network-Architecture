@@ -26,7 +26,7 @@ The Karolinska Directed Emotional Faces (KDEF) is a set of totally 4900 pictures
 8. Joblib
    
 # Models
-In our experminets we used three models(VGG19, VGG16, ImagenetV2, InceptionV3). All the models are availble in the tf.keras.applications. For the EfficientNetV2, please use the command below in the Anaconda Command Prompt:
+In our experminets we used three models(VGG19, VGG16). All the models are availble in the tf.keras.applications. For the EfficientNetV2, please use the command below in the Anaconda Command Prompt:
 ```bash
 pip install efficientnet
 ```
@@ -40,7 +40,7 @@ Through our project I used different layers like:
 These layers can be used from tensorflow.keras.layers.
 
 # HyperParameters and Optimizer
-We have used Adamm Optimizer for our base models like VGG19, VGG16, ImagenetV2, InceptionV3. For the transfer learning we have used the SGD(Stochastic Gradient Descent) optimizer.
+We have used Adamm Optimizer for our base models like VGG19, VGG16. For the transfer learning we have used the SGD(Stochastic Gradient Descent) and Adam optimizer.
 There are lots of Hyperparameter involved in our models. The list of the hyper-parameter and their values are given in the below table:
 
 | Parameters  | Values |
@@ -72,6 +72,10 @@ The testing results are given in the output folder.
 
 # Hyper Parameter Tuning
 The models are tuned with the hyper-meter. There were several of hyper-meters for this models like, learning-rate, dropout, l2_regularization, etc. We took a group of parameter to test that which set of parameter is giving us the best results.
+# System Specification
+* Windows 10 Education 64-bit
+*Ram: 32 GB
+*CPU: Intel Core i7-9700k 3.60 GHz 
 # Comparison
 We evaluated the model by the test and train accuracy. Also, a classification report was done to show the accuracy,f1-score,precision and recall.
 Moreover, freezing and unfreezing the layers impacts on the accuracy of the models. That's why I took several group of layers settings and then applied with the hyper-tuned models to find the results.
