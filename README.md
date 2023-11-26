@@ -5,11 +5,9 @@ This repository provides the source code and raw datasets of the project "Visual
 
 
 # Architecture
-The Evaluation will be done on three different stages:
-![Dataset Pre-Processing (2)](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/b045aea4-839b-405b-b8ff-04d675f1a3ff)
-![Dataset Pre-Processing (1)](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/e37150e7-c0e4-4b25-96b5-69092e98e1c0)
-![Dataset Pre-Processing](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/a4210c9d-6424-46be-9f34-fe56ca1af572)
-
+The Evaluation will be done on two different stages:
+![Transfer Learning Algorithms](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/e31716a8-b9d0-4578-bfe4-899c6bcc2aa5)
+![Transfer Learned Mode](https://github.com/jaherchowdhury/Visual-Sentiment-Analysis-Using-Different-Neural-Network-Architecture/assets/146418350/a57ac5e7-9046-4c24-838f-15a689ec0e60)
 
 # Data
 
