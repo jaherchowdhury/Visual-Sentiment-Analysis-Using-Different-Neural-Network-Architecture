@@ -25,7 +25,7 @@ The Karolinska Directed Emotional Faces (KDEF) is a set of totally 4900 pictures
 8. Joblib
    
 # Models
-In our experminets we used three models(VGG19,ResNet50,DenseNet121). All the models are availble in the tf.keras.applications.
+In our experminets we used three models(VGG19, VGG16, ImagenetV2, InceptionV3). All the models are availble in the tf.keras.applications.
 # Layers
 Through our project I used different layers like:
 * Flatten
@@ -36,7 +36,7 @@ Through our project I used different layers like:
 These layers can be used from tensorflow.keras.layers.
 
 # HyperParameters and Optimizer
-We have used Adamm Optimizer for our base models like VGG19 or ResNet50. For the transfer learning we have used the SGD(Stochastic Gradient Descent) optimizer.
+We have used Adamm Optimizer for our base models like VGG19, VGG16, ImagenetV2, InceptionV3. For the transfer learning we have used the SGD(Stochastic Gradient Descent) optimizer.
 There are lots of Hyperparameter involved in our models. The list of the hyper-parameter and their values are given in the below table:
 
 | Parameters  | Values |
@@ -60,6 +60,15 @@ For Training the dataset we have splitted the dataset into we have took the imag
 | width_shift_range,height_shift_range  | Allows shifting the image horizontally by a maximum of 20% of the image width  | .2 |
 | rescale  | Normalizes pixel values to the range [0, 1]   | 1./255 |
 | num_classes  | Number of emotion catagories  | 7 |
+| K | 2 |
 
+# Testing
+The models are tested with their tested data and with a unseen samle image to see of it can classify the emotions properly. For further assurement, the best model was checked with the K-fold validation.
+The testing results are given in the output folder.
 
-
+# Hyper Parameter Tuning
+The models are tuned with the hyper-meter. There were several of hyper-meters for this models like, learning-rate, dropout, l2_regularization, etc. We took a group of parameter to test that which set of parameter is giving us the best results.
+# Comparison
+We evaluated the model by the test and train accuracy. Also, a classification report was done to show the accuracy,f1-score,precision and recall.
+Moreover, freezing and unfreezing the layers impacts on the accuracy of the models. That's why I took several group of layers settings and then applied with the hyper-tuned models to find the results.
+Lastly, these models was comapred against their accuracies.The basic comparison results were given in the output folder.
