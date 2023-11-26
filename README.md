@@ -11,7 +11,7 @@ The Evaluation will be done on two different stages:
 
 # Data
 
-The Karolinska Directed Emotional Faces (KDEF) is a set of totally 4900 pictures of human facial expressions.The KDEF and AKDEF materials were produced in 1998 and have since then been freely shared within the research community. By today, KDEF has been used in more than 1500 research publications. If you wish to find out for which these are, and for what purposes they materials have been used, you can browse the existing publications on google scholar and also a similiar work here(https://www.mdpi.com/2079-9292/10/9/1036).
+The Karolinska Directed Emotional Faces (KDEF) is a set of totally 4900 pictures of human facial expressions.The KDEF and AKDEF materials were produced in 1998 and have since then been freely shared within the research community. By today, KDEF has been used in more than 1500 research publications. If you wish to find out for which these are, and for what purposes they materials have been used, you can browse the existing publications on google scholar and also a similiar work here(https://www.mdpi.com/2079-9292/10/9/1036). This dataset that we have used in our experiment is the subset of the KDEF dataset and it contains 2940 images(each class contains 420 images). The emotion levels are divided into seven catagories(anger,fear, disgust, happy, sad, surprise, neutral)
 
 
 # Library Dependencies
@@ -44,15 +44,17 @@ There are lots of Hyperparameter involved in our models. The list of the hyper-p
 | learning_rate(adam)   | 0.0001  |
 | learning_rate(sgd)   | 0.0001 |
 | momentum  | 0.9  |
-| dropout_rate  | 0.5  |
+| dropout_rate  | 0.3  |
 | l2_penalty  | 0.01 |
+| Epochs | 100 |
+| Early Stopping | val_loss=5 |
 
 # Training
 For Training the dataset we have splitted the dataset into we have took the images of train folder. We preprocessed the data using data augmentation and histogram equalization.
 
 | Variables  | Meaning | Values |
 | ------------- | ------------- | ------------- |
-| input_size   | Input size of the Image  | (48,48) |
+| input_size   | Input size of the Image  | (224,224) |
 | batch_size   | Sample of Image Processed by the model at each iteration  | 64 |
 | rotation_range  | Rotates  the image to specific number of degrees  | 20 |
 | width_shift_range,height_shift_range  | Allows shifting the image horizontally by a maximum of 20% of the image width  | .2 |
