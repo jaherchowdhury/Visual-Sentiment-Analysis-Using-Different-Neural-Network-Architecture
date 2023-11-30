@@ -14,6 +14,15 @@ The Evaluation will be done on two different stages:
 
 The Karolinska Directed Emotional Faces (KDEF) is a set of totally 4900 pictures of human facial expressions.The KDEF and AKDEF materials were produced in 1998 and have since then been freely shared within the research community. By today, KDEF has been used in more than 1500 research publications. If you wish to find out for which these are, and for what purposes they materials have been used, you can browse the existing publications on google scholar and also a similiar work here(https://www.mdpi.com/2079-9292/10/9/1036). This dataset that we have used in our experiment is the subset of the KDEF dataset and it contains 2940 images(each class contains 420 images). The emotion levels are divided into seven catagories(anger,fear, disgust, happy, sad, surprise, neutral). The sample dataset could be found on the ```main\Data```folder.
 
+# How to run the code
+The code was run in Jupyter notebook. Please, download the 
+```bash
+Visual Sentiment Analysis with histogram.ipynb 
+```
+```bash
+Visual Sentiment Analysis without Histogram Equalization.ipynb
+```
+files from the main directory. Upload the files in the jupyter notebook and run. You must have to download, import the libararies and edit the source folder for the dataset.
 
 # Library Dependencies
 1. Numpy
