@@ -22,7 +22,7 @@ Visual Sentiment Analysis with histogram.ipynb
 ```bash
 Visual Sentiment Analysis without Histogram Equalization.ipynb
 ```
-files from the main directory. Upload the files in the jupyter notebook and run. You must have to download, import the libararies and edit the source folder for the dataset.
+files from the main directory. Upload the files in the jupyter notebook and run. You must have to download, import the libararies and edit the source folder for the dataset. These code are separated in two files to save the computational power and complexity. One code will give the alogirthms performance with histogram equalization and without the histogram equalization.
 
 # Library Dependencies
 1. Numpy
