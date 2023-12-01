@@ -90,13 +90,12 @@ The models are tested with their test data to see of it can classify the emotion
 # Outputs
 **Note:** The new output folder will be updated to give clear understadning(updating)
 
-In the Output folder there are 5 folders of the models performance.In each folder there will be 4 images of the Confusion Matrix, Classification Report, Emotion label detected by the algorithms, Loss and Accuracy over time.They are listed as below:
+In the Output folder there are 2 folders ```main\Outputs\With Histogram Analysis ``` and ```main\Outputs\Without Histogram Analysis ```. Each of these folder contains 4 separate folders.In each folder there will be 4 images of the algorithm's Confusion Matrix, Classification Report, Emotion label detected by the algorithms, Loss and Accuracy over time.These folders are listed as below:
 01. VGG19 with all the layers freezed
 02. VGG19 with all the layers freezed accept the last two layers
 03. VGG16 with all the layers freezed
 04. VGG16 with all the layers freezed accept the last two layers
-05. K-fold Validation <br>
 
-For the overall performance comparison, we have created a table. This will be given outside the folders <br>
+For the overall performance comparison, we have created a table. This will be given outside the folders ```main\Outputs\ ``` <br>
 * Overall Performance
 
