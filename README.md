@@ -59,7 +59,7 @@ There are lots of Hyperparameter involved in our models. The list of the hyper-p
 | momentum  | 0.9  |
 | dropout_rate  | 0.3  |
 | l2_penalty  | 0.01 |
-| Epochs | 100 |
+| Epochs | 300 |
 | Early Stopping | val_loss=5 |
 
 # Training
@@ -68,7 +68,7 @@ For Training the dataset we have splitted the dataset into we have took the imag
 | Variables  | Meaning | Values |
 | ------------- | ------------- | ------------- |
 | input_size   | Input size of the Image  | (224,224) |
-| batch_size   | Sample of Image Processed by the model at each iteration  | 64 |
+| batch_size   | Sample of Image Processed by the model at each iteration  | 32 |
 | rotation_range  | Rotates  the image to specific number of degrees  | 20 |
 | width_shift_range,height_shift_range  | Allows shifting the image horizontally by a maximum of 20% of the image width  | .2 |
 | rescale  | Normalizes pixel values to the range [0, 1]   | 1./255 |
