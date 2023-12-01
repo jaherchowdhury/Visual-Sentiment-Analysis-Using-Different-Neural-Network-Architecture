@@ -87,7 +87,7 @@ The models are tested with their test data to see of it can classify the emotion
 * CPU: Intel Core i7-9700k 3.60 GHz
 * GPU: NVIDIA RTX 2080
 * Platform : Docker Jupyter Notebook
-# Outputs
+# Outputs (will be updated)
 In the Output folder there are 5 folders of the models performance.In each folder there will be 4 images of the outputs, Confusion Matrix, Classification Report, Emotion label detected by the algorithms, Loss and Accuracy over time.They are listed as below:
 01. VGG19 with all the layers freezed
 02. VGG19 with all the layers freezed accept the last two layers
