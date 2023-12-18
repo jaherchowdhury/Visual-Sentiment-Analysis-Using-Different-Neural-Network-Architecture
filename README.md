@@ -16,11 +16,11 @@ The Transfrer Learning Models that I have used is given below:
 
 **KDEF**
 The Karolinska Directed Emotional Faces (KDEF) dataset includes 4900 colored images of human facial emotions. Averaged KDEF (AKDEF) is a collection of averagedimages derived from the original KDEF photos. The KDEF and AKDEF materials
-were created in 1998 and have since been freely distributed throughout the scholarly community. KDEF has been used in over 1500 research publications as of today. The KDEF includes seven emotion classes: anger, neutral, disgust, fear, happiness, sadness, and surprise. The complete dataset is available at here.  
+were created in 1998 and have since been freely distributed throughout the scholarly community. KDEF has been used in over 1500 research publications as of today. The KDEF includes seven emotion classes: anger, neutral, disgust, fear, happiness, sadness, and surprise. The complete dataset is available at [here](https://www.kdef.se/).  
 
 **CK+**
 The Extended Cohn-Kanade (CK+) dataset consists of 981 grayscale images of seven emotion classes(anger, contempt, disgust, fear, happiness, sadness, and surprise). The CK+ dataset images are (48,48) and grayscale. The CK+ database is widely
-regarded as the most extensively used laboratory-controlled facial expression classification dataset available and is used in the majority of facial expression classification methods. The dataset is available here.
+regarded as the most extensively used laboratory-controlled facial expression classification dataset available and is used in the majority of facial expression classification methods. The dataset is available [here](https://www.kaggle.com/datasets/shawon10/ckplus).
 
 # How to run the code
 The code was run in Jupyter notebook. Please, download the 
