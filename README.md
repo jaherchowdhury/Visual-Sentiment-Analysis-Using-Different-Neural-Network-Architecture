@@ -30,11 +30,12 @@ Visual Sentiment Analysis with histogram.ipynb
 ```bash
 Visual Sentiment Analysis without Histogram Equalization.ipynb
 ```
-files from the main directory. Upload the files in the jupyter notebook and run. You must have to download/import the libararies and edit the source folder for the dataset. These code are separated in two files to save the computational power and complexity. One code will give the alogirthms performance with histogram equalization and without the histogram equalization. The final performance of the models with or without the histogram equalization will be found on the 
-```bash
-Visual Sentiment Analysis without Histogram Equalization.ipynb
-```
+files from the main directory. Upload the files in the jupyter notebook and run. You must have to download/import the libararies and edit the source folder for the dataset. These code are separated in two files to save the computational power and complexity.
 
+1. You could get the With Histogram + With HyperTuning Results of KDEF from 'Visual Sentiment Analysis with histogram.ipynb '
+2. You could get the Without Histogram + Without HyperTuning Results of KDEF from 'Visual Sentiment Analysis without histogram.ipynb '
+3. You could get the Without Histogram + with HyperTuning Results of KDEF from 'Visual Sentiment Analysis without histogram.ipynb '
+4. You could get the With Histogram + With HyperTuning Results of CK+ from 'CK+ with histogram.ipynb '
 # Library Dependencies
 1. Numpy
 2. Pandas
